@@ -1,15 +1,13 @@
-Terry Biesboer
+React.js assignment for school.
 
-<!-- Assignment - 04 API -->
+This is a mock social media site using React.js and React Router
 
-Final additions to class project.
+The landing page is Newsfeed, it contains hard-coded posts that can be edited and deleted. No option to edit image on post yet. There is a form to create a new post without image as well.
+The Charts page was created using Recharts.
+The Friends page and Messages pages were created using Randomuser API
+The Gallery page is a collection of some of my personal photos.
 
-Added User Profile (Under Settings page, Avatar on header takes you there as well)
-Added RandomUser Generator 
-- Integrated random users in UserProfile, Messages, and Friends
-Integrated HamburgerMenu and responsive design for header to display menu
-integrated resonsive design for Gallery and Newsfeed pages
+Modal is included for previewing images from Gallery
 
-I hope you enjoy!
-
-thatDudeTerry
+The avatar in the header also acts as a link to the Settings page
+The Settings page > User Profile has content pulled from Randomuser API, the remaining links are dead at the moment.
