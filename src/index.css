@@ -1,0 +1,72 @@
+body {
+  background-color: #586F7C;
+  margin: 0;
+  font-family: 'Urbanist', 'Arial', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #000000;
+  transition: background-color 4200ms ease-in-out;
+  z-index: 1; /* Ensure it sits on top of other content */
+  opacity: 0;
+}
+
+.overlay-visible {
+  opacity: 1;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 906px) {
+  .userActions {
+    display: none; /* Hide user actions on small screens */
+  }
+
+  .mobileNav {
+    display: flex; /* Show mobile nav when hamburger menu is clicked */
+  }
+
+  .logoContainer {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .searchInput {
+    width: 100px; /* Adjust width for smaller screens */
+  }
+}
+
+/* Colors
+https://coolors.co/palette/000000-2f4550-586f7c-b8dbd9-f4f4f9
+
+#000000 | (0, 0, 0) | black
+
+#2F4550 | (47, 69, 80) | ~ Charcoal
+
+#586F7C | (88, 111, 124) | ~ Payne's_gray
+
+#B8DBD9 | (184, 219, 217) | ~ Light_blue
+
+#F4F4F9 | (244, 244, 249) | ~ Ghost_white
+
+
+/* 'Urbanist', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans',  */

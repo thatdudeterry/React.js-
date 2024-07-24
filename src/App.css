@@ -1,0 +1,112 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #2F4550;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+	body {
+  background-color: #586F7C;
+  margin: 0;
+  font-family: 'Arial', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+container {
+  /* background-color: #f3dfa2; */
+  display: flex;
+  flex-direction: row;
+  width: 98%;
+  margin: 0 auto;
+}
+
+leftColumn {
+  flex: 0 0 16%;
+  /* background-color: #f3dfa2, */
+}
+
+middleColumn {
+  flex: 1 0 68%;
+}
+
+rightColumn {
+  flex: 0 0 16%;
+}
+ 
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #000000;
+  transition: background-color 4200ms ease-in-out;
+  z-index: 1; /* Ensure it sits on top of other content */
+  opacity: 0;
+}
+
+.overlay-visible {
+  opacity: 1;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+/* Colors
+https://coolors.co/palette/000000-2f4550-586f7c-b8dbd9-f4f4f9
+
+#000000 | (0, 0, 0) | black
+
+#2F4550 | (47, 69, 80) | ~ Charcoal
+
+#586F7C | (88, 111, 124) | ~ Payne's_gray
+
+#B8DBD9 | (184, 219, 217) | ~ Light_blue
+
+#F4F4F9 | (244, 244, 249) | ~ Ghost_white
+
+
+/* 'Urbanist', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans',  */
